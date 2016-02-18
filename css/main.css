@@ -41,6 +41,10 @@ body {
     }
 }
 
+nav.register {
+    height: 80px;
+}
+
 nav {
     color: #a1aebd;
 }
@@ -67,7 +71,7 @@ nav {
     margin-left: 30px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
     color: #a1aebd;
     text-decoration: none;
 }
@@ -110,11 +114,16 @@ a.disable {
     cursor: default;
 }
 
-.navbar-inverse .navbar-nav>li>a.logout {
+.navbar-inverse .navbar-nav > li > a.logout {
     color: white;
 }
-.navbar-inverse .navbar-nav>li>a.logout:hover {
+
+.navbar-inverse .navbar-nav > li > a.logout:hover {
     text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav > li > a.sbb-active {
+    color: white;
 }
 
 /* content */
@@ -137,6 +146,13 @@ hr.hr-homepage-style {
     border-radius: 0;
     border: none;
     margin-bottom: 100px;
+}
+
+.sbb-panel-tickets {
+    background-color: #f8f8f8;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 10px;
 }
 
 .sbb-panel-date {
@@ -173,11 +189,11 @@ hr.hr-homepage-style {
 .sbb-panel-notify {
     background-color: #dddddd;
     padding: 10px;
-    margin: -15px -15px 0 0 ;
+    margin: -15px -15px 0 0;
 }
 
 .sbb-hr {
-    color: #dddddd  ;
+    color: #dddddd;
     margin-bottom: 15px;
 }
 
@@ -194,11 +210,24 @@ hr.hr-homepage-style {
     line-height: 1;
 }
 
+.btn-sbb-cancel {
+    height: 48px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f8f8f8;
+    background-color: #999999;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
 .btn-sbb:hover {
     color: #bababa;
 }
 
-.panel-default>.sbb-panel-heading-background {
+.panel-default > .sbb-panel-heading-background {
     padding: 15px;
     background-color: #566373;
 }
@@ -218,7 +247,6 @@ hr.hr-homepage-style {
 .sbb-panel-img {
     margin: -15px -15px 0 -15px;
 }
-
 
 .sbb-panel-img-caption {
     padding: 10px;
@@ -241,6 +269,237 @@ hr.hr-homepage-style {
     color: #19212b;
 }
 
+.sbb-abo-text-color {
+    color: #566373;
+}
+
+.sbb-time {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.sbb-panel-abo-text {
+    display: inline-block;
+}
+
+.sbb-panel-info-text {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #566373;
+    padding-right: 50px;
+}
+
+.sbb-panel-info-class {
+    height: 65px;
+    line-height: 65px;
+    font-size: 16px;
+    color: #566373;
+    padding-right: 70px;
+}
+
+.sbb-panel-info-bill {
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+    color: #19212b;
+    padding-right: 150px;
+}
+
+.sbb-panel-info-time {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #999999;
+    padding-right: 60px;
+}
+
+.sbb-panel-info-price {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #19212b;
+}
+
+.sbb-panel-vertical-line {
+    height: 65px;
+    line-height: 65px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px;
+    width: 1px;
+    background-color: #566373;
+}
+
+/* Tickets */
+
+.sbb-tickets-info-text {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #566373;
+}
+
+.sbb-tickets-total {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    font-size: 24px;
+    color: #566373;
+    margin-bottom: 30px;
+}
+
+.sbb-tickets-price {
+    text-align: right;
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #19212b;
+}
+
+.sbb-tickets-trip {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #19212b;
+}
+
+.sbb-tickets-total-price {
+    font-weight: bold;
+    font-size: 30px;
+    color: #19212b;
+}
+
+.sbb-tickets-currency {
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+    color: #19212b;
+}
+
+.sbb-ticket-time {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #999999;
+}
+
+.sbb-tickets-quantity {
+    height: 65px;
+    line-height: 65px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #566373;
+    padding-right: 10px;
+}
+
+.sbb-tickets-input-number {
+    text-align: center;
+    width: 68px;
+    height: 48px;
+    border: solid 1px #dddddd;
+}
+
+.sbb-tickets-hr {
+    margin-bottom: 150px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+/* My travel account */
+
+.sbb-account-text-color {
+    color: #666666;
+}
+
+.sbb-input-account {
+    border-radius: 0;
+    height: 48px;
+    border: solid 1px #dddddd;
+}
+
+.form-control:focus {
+    border-color: #a9a9a9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,102,102,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,102,102,.6);
+}
+
+.sbb-account-password {
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.sbb-checkbox {
+    width: 48px;
+    height: 48px;
+    border: solid 2px #2d5586;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 53px;
+    height: 48px;
+    display: inline-block;
+    line-height: 48px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 48px;
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -48px;
+}
+
+label.css-label {
+    background-image: url(http://csscheckbox.com/checkboxes/u/csscheckbox_294fdf633b8f9db5b9ceeff86fbc25e2.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Register */
+
+.cover-img {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.sbb-select {
+    border-radius: 0;
+    height: 48px;
+    border: solid 1px #dddddd;
+}
+
 /* media queries */
 
 @media screen and (min-width: 768px) {
@@ -259,7 +518,7 @@ hr.hr-homepage-style {
     }
 
     .nav-links-right {
-        margin: 20px -50px 0 0;
+        margin-top: 20px;
     }
 
     .nav-cart-align {
@@ -274,6 +533,36 @@ hr.hr-homepage-style {
 
     .col-pad-right {
         padding-right: 0;
+    }
+
+    .col-pad-left-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (min-width: 991px) {
+    .sbb-separator {
+        border-right: 1px solid #566373;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .sbb-panel-info-text {
+        font-size: 20px;
+    }
+
+    .sbb-panel-info-class {
+        display: block;
+    }
+
+    .sbb-panel-info-bill {
+        display: block;
+    }
+
+    .sbb-panel-info-time {
+        display: block;
     }
 }
 
@@ -292,6 +581,22 @@ hr.hr-homepage-style {
 
     .nav-cart {
         margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sbb-panel-vertical-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sbb-panel-info-class {
+        padding-right: 20px;
+    }
+
+    .sbb-panel-info-bill {
+        padding-right: 50px;
     }
 }
 
